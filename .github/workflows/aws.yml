@@ -33,9 +33,11 @@ on:
 env:
   AWS_REGION: ap-south-1                  # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: studentperformance         # set this to your Amazon ECR repository name
-            
-  ECS_TASK_DEFINITION: 634342816099.dkr.ecr.ap-south-1.amazonaws.com/studentperformance:6cbd9e9987f57a9bdf99f3031711b9a8bb4dbebe
-                                              
+
+  ECS_TASK_DEFINITION: 634342816099.dkr.ecr.ap-south-1.amazonaws.com/studentperformance:6cbd9e9987f57a9bdf99f3031711b9a8bb4dbebe # set this to the path to your Amazon ECS task definition
+                                               # file, e.g. .aws/task-definition.json
+  CONTAINER_NAME: vanshika2721/mlops           # set this to the name of the container in the
+                                               # containerDefinitions section of your task definition
 
 permissions:
   contents: read
