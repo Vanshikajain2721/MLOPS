@@ -1,4 +1,5 @@
-from flask import Flask,request,render_template
+from flask import Flask,request
+from flask import render_template
 import numpy as np
 import pandas as pd 
 
@@ -34,10 +35,11 @@ def predict_datapoint():
         print(pred_df)
 
         predict_pipeline=PredictPipeline()
-        result=render_template('home.html',result[0])
+        results=predict_pipeline.predict(pred_df)
+        result=render_template('home.html',results[0])
         return result
 
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", debug=True,port=5000)
 
