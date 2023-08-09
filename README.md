@@ -1,2 +1,2 @@
 ## MLOPS PROJECT 
-## Deployed on AWS
+## Deployed on render: https://maths-score-prediction.onrender.com/
