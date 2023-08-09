@@ -33,7 +33,9 @@ on:
 env:
   AWS_REGION: ap-south-1                  # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: studentperformance         # set this to your Amazon ECR repository name
-
+            
+  ECS_TASK_DEFINITION: 634342816099.dkr.ecr.ap-south-1.amazonaws.com/studentperformance:6cbd9e9987f57a9bdf99f3031711b9a8bb4dbebe
+                                              
 
 permissions:
   contents: read
