@@ -1,3 +1,2 @@
 ## MLOPS PROJECT 
-## Deployment using CICD Pipeline
-"# mlops-CICD-Pipeline" 
+## Deployed on render: https://maths-score-prediction.onrender.com/
